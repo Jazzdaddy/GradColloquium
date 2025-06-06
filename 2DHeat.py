@@ -231,10 +231,8 @@ def ROM(r, dx=1e-2, dy=1e-2, dt=1e-3, a=1, plot=False):
             ax.set_zlabel('u')
             ax.set_zlim(0, 1)
 
-            # Plot the updated surface
             surf = ax.plot_surface(X, Y, Ugraph[:, :, frame], cmap="coolwarm", vmin=U_min, vmax=U_max)
 
-            # Update the time text
             time_text.set_text(f'Time Step: {frame * dt:.3f}')
             return surf, time_text
 
