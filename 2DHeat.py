@@ -225,7 +225,7 @@ def ROM(r, dx=1e-2, dy=1e-2, dt=1e-3, a=1, plot=False):
         time_text = ax.text3D(0.02, 0.95, 1, '', transform=ax.transAxes)
 
         def update(frame):
-            ax.clear()  # Clear the previous surface
+            ax.clear()  
             ax.set_xlabel('x')
             ax.set_ylabel('y')
             ax.set_zlabel('u')
